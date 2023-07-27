@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="dtlogo.png" type="image/png">
 
+    <link rel="stylesheet" href="styles.css">
+    <div class="floating-box"></div>
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -65,6 +68,34 @@
         </div>
 
     </div>
+
+    <!-- for boxes -->
+    <div id="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+
+    <script>
+        document.querySelectorAll('.box').forEach(box => {
+          // give each box a random initial position
+          box.style.top = `${Math.random() * window.innerHeight}px`;
+          box.style.left = `${Math.random() * window.innerWidth}px`;
+      
+          // give each box a random animation duration and delay, for variation
+          const animationDuration = Math.random() * 5 + 5; // between 5 and 10 seconds
+          const animationDelay = Math.random() * 5; // up to 5 seconds
+          box.style.animationDuration = `${animationDuration}s`;
+          box.style.animationDelay = `${animationDelay}s`;
+        });
+      </script>
+
+
 </body>
 </html>    
 

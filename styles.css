@@ -1,0 +1,33 @@
+body {
+    position: relative;
+}
+
+.floating-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    animation: float 5s infinite;
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    opacity: 0.5; 
+    animation: float 5s infinite linear; /* Changed 'ease-in-out' to 'linear' for continuous, even rotation */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(100px, 100px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+  
