@@ -1,0 +1,49 @@
+body {
+    position: relative;
+}
+
+.content {
+    margin: 5% auto;  /* top and bottom margins 5%, left and right margins auto for centering */
+    width: 90%;  /* it will take 90% of the viewport width */
+    max-width: 600px; /* it will not go beyond 600px even on wider screens */
+    text-align: left;
+}
+
+.floating-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    animation: float 5s infinite;
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    opacity: 0.5; 
+    animation: float 5s infinite linear;
+}
+
+@keyframes float {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(100px, 100px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+/* Add media query for smaller devices */
+@media (max-width: 600px) {
+    .content {
+        width: 90vw;
+    }
+    p {
+        font-size: 18px;
+    }
+} 
