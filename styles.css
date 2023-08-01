@@ -1,5 +1,27 @@
 body {
-    position: relative;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+p {
+    font-size: 16px; /* change this to adjust the size of the paragraph text */
+    color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 .content {
@@ -38,12 +60,93 @@ body {
     }
 }
 
+
+
+.toggle-container {
+    position: absolute;
+    top: 70px;
+    right: 600px;  /* Adjust this to position the icon properly */
+    z-index: 100;
+    cursor: pointer;  /* Make it look clickable */
+}
+
+.toggle-container i {
+    font-size: 30px;
+    color: var(--text-color);  /* Make sure to transition the color */
+    transition: color 0.3s ease;
+}
+
+
+.toggle-container label .fa-sun {
+    transform: translateX(0); /* Modify this line */
+}
+
+.toggle-container input:checked + label .fa-sun {
+    transform: translateX(26px);
+}
+
+.toggle-container input:checked + label .fa-moon {
+    transform: translateX(0);
+}
+
+.toggle-container label::before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+width: 60px;
+height: 34px;
+background-color: #1da1f2;
+border-radius: 34px;
+transition: background-color 0.2s;
+}
+
+.toggle-container label::after {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+width: 34px;
+height: 34px;
+background-color: white;
+border-radius: 50%;
+transition: transform 0.2s;
+}
+
+.toggle-container input:checked + label::before {
+background-color: #111;
+}
+
+.toggle-container input:checked + label::after {
+transform: translateX(26px);
+}
+
+
+:root {
+--text-color: #333;
+--background-color: #f3f3f3;
+}
+
+/* body {
+color: var(--text-color);
+background-color: var(--background-color);
+} */
+
+body[data-theme="dark"] {
+--text-color: #f3f3f3;
+--background-color: #333;
+}
+
 /* Add media query for smaller devices */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .content {
         width: 90vw;
     }
     p {
         font-size: 18px;
+    }
+    .toggle-container {
+        top: 50px;
+        right: 120px;
     }
 } 
