@@ -11,59 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="dtlogo.png" type="image/png">
 
-    <!-- need to update to link to styles.css -->
+    <!-- links CSS file to HTML document -->
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-            margin: 0;
-            padding-top: 20px;
-        }
-        .content {
-            text-align: left;
-            width: 90%; /* Adjusted to viewport width */
-            max-width: 600px; /* Limit maximum width */
-            margin: 5% auto;
-        }
-        h1 {
-            color: var(--text-color);
-        }
-        p {
-            font-size: 16px; /* change this to adjust the size of the paragraph text */
-            color: var(--text-color);
-        }
-        .text-link {
-            color: #008CBA;
-            text-decoration: none;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }    
-        @media (max-width: 600px) {
-            .content {
-                width: 90vw;
-            }
-            p {
-                font-size: 18px;
-            }
-        }
-    </style>
+    <!-- using jQuery for fade in and fade out -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>  
-    <div class="content">
+    <div id="close-button">
+        <a href="../index.html">X</a>
+    </div>
+
+    <style>
+        #close-button {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            font-size: 1.5em;
+        }
+        #close-button a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+
+    <!-- notice that content is an id. 
+    you can either use IDs or classes.
+    use ID for elements that are unique and occur once per page. IDs are targeted/selected with #. 
+    use classes for elements that you have many of and want to share the same style. Classes are targeted/selected with '.' -->
+    <div id="content">
         <h1>Chess Engine Bitboards</h1>
         <p>
             This project, initially started as an end-of-year project for CSC207 at UofT, is focused on creating a chess engine using bitboards. 
@@ -72,23 +49,21 @@
             This project is built with Java and Java Swing for the GUI, and employs Clean Architecture principles and the Model-View-Controller framework.
             <br>
             <br>
-            
-                <img src="images/chessgamedemo.png" alt="Chessboard">
-                <br>
-                <br>
-                <br>
-                <!-- <div class = "center-content"> -->
-                    Here is a look at how we organized the packages.
-                    <br>
-                    <!-- i should put this image beside the picture -->
-                    <img src="images/MVC-cleanarchitecture.png" alt="Chessboard">
-                <!-- <div> -->
+            <img class="myImageClass" src="images/chessgamedemo.png" alt="Chessboard">
+            <br>
+            <br>
+            <br>
+            <!-- <div class = "center-content"> -->
+            Here is a look at how the packages were organized to follow the MVC framework with a focus on Clean Architecture.
+            <br>
+            <!-- i should put this image beside the picture -->
+            <img src="images/MVC-cleanarchitecture.png" alt="Chessboard">
+            <!-- <div> -->
         </p>
     </div>
 
-
-<!-- links themeToggle.js file to this HTML file  -->
-<script src="themeToggle.js"></script>
+    <!-- linking to javascript file -->
+    <script src="scripts.js"></script>
 
 </body>
 </html>    
