@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+h1 {
+    color: var(--text-color);
+}
+p {
+    font-size: 16px; /* change this to adjust the size of the paragraph text */
+    color: var(--text-color);
+}
+.text-link {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 90vw;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+#content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    margin: 5% auto;  /* top and bottom margins 5%, left and right margins auto for centering */
+    width: 90%;  /* it will take 90% of the viewport width */
+    max-width: 600px; /* it will not go beyond 600px even on wider screens */
+    text-align: left;
+}
+
+
+.myImageClass {
+    margin: 1% auto;  /* top and bottom margins 5%, left and right margins auto for centering */
+    width: 100%;  /* it will take 90% of the viewport width */
+    max-width: 4000px; /* it will not go beyond 600px even on wider screens */
+    text-align: left;
+}

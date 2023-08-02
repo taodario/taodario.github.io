@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- so it works on phone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Dario Tao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="dtlogo.png" type="image/png">
+
+    <!-- links CSS file to HTML document -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- using jQuery for fade in and fade out -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>  
+    <div id="close-button">
+        <a href="../index.html">X</a>
+    </div>
+
+    <style>
+        #close-button {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            font-size: 1.5em;
+        }
+        #close-button a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+
+    <!-- notice that content is an id. 
+    you can either use IDs or classes.
+    use ID for elements that are unique and occur once per page. IDs are targeted/selected with #. 
+    use classes for elements that you have many of and want to share the same style. Classes are targeted/selected with '.' -->
+    <div id="content">
+        <h1>Course Requisite Relationships</h1>
+        <p>
+            Course Requisite Relationships is a unique platform aimed at enhancing the academic planning experience for students. With the primary focus on course planning, 
+            it enables the visualization of course prerequisites and prerequisites in a simple and intuitive manner with directed graphs and course codes as nodes. It caters to the 
+            unique needs of visual academic planning that current university planning tools fail to fulfill. The web application is built using Python, Flask, and jQuery on the server-side, with 
+            NetworkX and Graphviz libraries for the generation and rendering of course graphs. The client-side uses HTML, CSS, and Javascript to create an interactive and 
+            user-friendly interface. The website is deployed to and hosted with PythonAnywhere.
+            <br>
+            <br>
+            <img class="myImageClass" src="images/requisiterelationshipdemo.png" alt="Demo">
+            <br>
+            <img class="myImageClass" src="images/course_prereqs1.png" alt="Demo">
+            <br>    
+            <br>
+            You can view the website <a class="text-link" href="http://taodario.pythonanywhere.com/" target="_blank" rel="noreferrer">here.</a>
+        </p>
+    </div>
+
+    <!-- linking to javascript file -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>    
+
+
+
