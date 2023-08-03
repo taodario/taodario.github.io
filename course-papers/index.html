@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- so it works on phone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Dario Tao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="dtlogo.png" type="image/png">
+
+    <!-- links CSS file to HTML document -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- using jQuery for fade in and fade out -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>  
+    <div id="close-button">
+        <a href="../index.html">X</a>
+    </div>
+
+    <style>
+        #close-button {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            font-size: 1.5em;
+        }
+        #close-button a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+
+    <!-- notice that content is an id. 
+    you can either use IDs or classes.
+    use ID for elements that are unique and occur once per page. IDs are targeted/selected with #. 
+    use classes for elements that you have many of and want to share the same style. Classes are targeted/selected with '.' -->
+    <div id="content">
+        <h1>Featured Course Papers</h1>
+        <p>
+            <strong style="font-size: 20px;">The Dual Dynamic: Exploring the Correlation between Housing Prices and Crime Incidence</strong>
+            <br><br>
+            Using an economic model, the following paper explores the complex relationships between crime rates and housing prices in real 
+            estate markets. The study shows a modest correlation where increased crime rates could potentially lower housing prices. The 
+            research, however, suggests the economic significance of this correlation is quite minimal. The entire analysis was conducted 
+            using STATA, and the findings underscore the need for further investigation into the interplay between safety, crime rates, 
+            and their effects on real estate economics.
+            <br><br>
+            <embed src="ECO375 Final.pdf" type="application/pdf" width="100%" height="600px" />
+            <br>
+            <br>
+            <br>
+            
+            <strong style="font-size: 20px;">Unraveling the 2021 United Kingdom's Flash Crash: A Consequential Financial Event</strong>
+            <br><br>
+            Central banks around the world took unprecedented policies to aid the economy in 2020 due to the COVID-19 shock. 
+            This paper zones in on the United Kingdom during another financial crisis, where a new variant of COVID-19 was discovered 
+            in mid-November 2021. Starting by introducing the economic scene before and after the crisis, a recommendation of financial 
+            market liquidity operations will follow where the viability of long-term asset purchases, reduction of capital needed for 
+            lending, and commercial papers are discussed.
+            <br><br>
+            <embed src="Unraveling the 2021 Flash Crash.pdf" type="application/pdf" width="100%" height="600px" />
+            <br>
+            <br>
+            <br>
+            
+            <strong style="font-size: 20px;">Bitcoin: The Newest Form of Money</strong>
+            <br><br>
+            As a relatively new retail payment instrument, Bitcoin is now considered the most popular decentralized
+            cryptocurrency around the globe. A better understanding of this digital currency is necessary to help evaluate
+            whether or not central banks should introduce their own electronic retail payment instrument. A variety of
+            sources were used to gather the information within this report. This list includes news articles, web articles,
+            textbooks, research studies, textbooks, the Bitcoin user agreement, and a literature review. Bitcoin logistics,
+            including the pros and cons of using this cryptocurrency, are examined in this report.
+            <br><br>
+            <embed src="Bitcoin-The Newest Form of Money.pdf" type="application/pdf" width="100%" height="600px" />
+            <br>
+            <br>
+            <br>
+            
+        </p>
+    </div>
+
+    <!-- linking to javascript file -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>    
+
+
+

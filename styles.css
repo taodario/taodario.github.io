@@ -62,13 +62,6 @@ p {
 
 
 
-.toggle-container {
-    position: absolute;
-    top: 70px;
-    right: 600px;  /* Adjust this to position the icon properly */
-    z-index: 100;
-    cursor: pointer;  /* Make it look clickable */
-}
 
 .toggle-container i {
     font-size: 30px;
@@ -150,3 +143,12 @@ body[data-theme="dark"] {
         right: 120px;
     }
 } 
+
+
+.toggle-container {
+    position: absolute;
+    top: 80px;
+    right: 35%;  /* Adjust this to position the icon properly */
+    /* z-index: 100; */
+    cursor: pointer;  /* Make it look clickable */
+}
