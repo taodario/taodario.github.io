@@ -3,4 +3,4 @@ Personal website
 
 TODO: 
 1. add photography
-2. check apple notes
+2. check apple notes, google drive, course details, 236, etc.
