@@ -13,7 +13,7 @@ h1 {
     color: var(--text-color);
 }
 p {
-    font-size: 16px; /* change this to adjust the size of the paragraph text */
+    font-size: 16px; 
     color: var(--text-color);
 }
 .text-link {
@@ -42,16 +42,16 @@ p {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 
-    margin: 5% auto;  /* top and bottom margins 5%, left and right margins auto for centering */
-    width: 90%;  /* it will take 90% of the viewport width */
-    max-width: 600px; /* it will not go beyond 600px even on wider screens */
+    margin: 5% auto; 
+    width: 90%;  
+    max-width: 600px; 
     text-align: left;
 }
 
 .myImageClass {
-    margin: 1% auto;  /* top and bottom margins 5%, left and right margins auto for centering */
-    width: 100%;  /* it will take 90% of the viewport width */
-    max-width: 4000px; /* it will not go beyond 600px even on wider screens */
+    margin: 1% auto; 
+    width: 100%;  
+    max-width: 4000px;
     text-align: left;
 }
 
