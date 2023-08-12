@@ -6,6 +6,9 @@
   <title>Your Gallery</title>
 
   <style>
+    .grid {
+      margin: 0 auto;
+    }
     .grid-item {
       width: 600px;
       margin-bottom: 10px; /* Add a bottom margin to create a vertical gap */
@@ -63,7 +66,8 @@
       window.addEventListener('load', function() {
         var msnry = new Masonry('.grid', {
           itemSelector: '.grid-item',
-          columnWidth: 210
+          columnWidth: 610,
+          fitWidth: true
         });
       });
 
