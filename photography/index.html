@@ -1,31 +1,74 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Gallery</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .grid-item {
+      width: 600px;
+      margin-bottom: 10px; /* Add a bottom margin to create a vertical gap */
+    }
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 </head>
+<body>
 
-<body>  
-        <div class="grid">
 
-            <div class="grid-item"><img src="/photography/photos/IMG_1195.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1196.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1197.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1198.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1199.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1200.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1201.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1202.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1203.JPG" alt=""></div>
-            <div class="grid-item"><img src="/photography/photos/IMG_1204.JPG" alt=""></div>
-        </div>
-        <script src="scripts.js"></script>
+  <body>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1195.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1196.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1197.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1198.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1199.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1200.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1201.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1202.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1203.JPG" alt="" />
+      </div>
+      <div class="grid-item">
+        <img src="/photography/photos/IMG_1204.JPG" alt="" />
+      </div>
+    </div>
+
+    <!-- Include Masonry.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+    <!-- Initialize Masonry -->
+    <script>
+      window.addEventListener('load', function() {
+        var msnry = new Masonry('.grid', {
+          itemSelector: '.grid-item',
+          columnWidth: 210
+        });
+      });
+
+    </script>
+
 </body>
-</html>    
 
-
-
+</html>
