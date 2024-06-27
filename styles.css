@@ -69,20 +69,19 @@ p {
     transition: color 0.3s ease;
 }
 
-
-.toggle-container label .fa-sun {
+/* .toggle-container label .fa-sun {
     transform: translateX(0);
-}
+} */
 
-.toggle-container input:checked + label .fa-sun {
+/* .toggle-container input:checked + label .fa-sun {
     transform: translateX(26px);
-}
+} */
 
-.toggle-container input:checked + label .fa-moon {
+/* .toggle-container input:checked + label .fa-moon {
     transform: translateX(0);
-}
+} */
 
-.toggle-container label::before {
+/* .toggle-container label::before {
 content: '';
 position: absolute;
 left: 0;
@@ -92,9 +91,9 @@ height: 34px;
 background-color: #1da1f2;
 border-radius: 34px;
 transition: background-color 0.2s;
-}
+} */
 
-.toggle-container label::after {
+/* .toggle-container label::after {
 content: '';
 position: absolute;
 left: 0;
@@ -104,15 +103,15 @@ height: 34px;
 background-color: white;
 border-radius: 50%;
 transition: transform 0.2s;
-}
+} */
 
-.toggle-container input:checked + label::before {
+/* .toggle-container input:checked + label::before {
 background-color: #111;
-}
+} */
 
-.toggle-container input:checked + label::after {
+/* .toggle-container input:checked + label::after {
 transform: translateX(26px);
-}
+} */
 
 
 :root {
@@ -132,16 +131,21 @@ body[data-theme="dark"] {
     p {
         font-size: 18px;
     }
-    .toggle-container {
+    /* .toggle-container {
         top: 50px;
         right: 120px;
-    }
+    } */
 } 
 
-
+/* 
 .toggle-container {
     position: absolute;
     top: 80px;
     right: 35%;
     cursor: pointer;
-}
+} */
+
+/* .container {
+    position: relative; /* Set the parent container to relative positioning */
+/* } */
+
