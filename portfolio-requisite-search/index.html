@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Dario Tao</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="dtlogo.png" type="image/png">
@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>  
+<body>
     <div id="close-button">
         <a href="../index.html">X</a>
     </div>
@@ -27,40 +27,49 @@
             right: 30px;
             font-size: 1.5em;
         }
+
         #close-button a {
             text-decoration: none;
             color: #000;
         }
+
         .text-link2 {
             color: #008CBA;
             text-decoration: none;
             transition: all 0.3s ease;
         }
+
         .text-link2:hover {
             color: #555;
             text-decoration: underline;
-            transform: scale(1.05); 
+            transform: scale(1.05);
         }
     </style>
 
     <div id="content">
-        <h1>Coursify - Course Requisite Relationships</h1>
+        <a class="text-link2" href="http://taodario.pythonanywhere.com/" target="_blank" rel="noreferrer">
+            <h1>Coursify - Course Requisite Relationships</h1>
+        </a>
         <p>
-            Course Requisite Relationships is a tool aimed at enhancing the academic planning experience for students. With the primary focus on course planning, 
-            it enables the visualization of course requisites and prerequisites in a simple and intuitive manner with directed graphs and course codes as nodes. It caters to the 
-            unique needs of visual academic planning that current university planning tools don't fulfill. 
+            Course Requisite Relationships is a tool aimed at enhancing the academic planning experience for students.
+            With the primary focus on course planning,
+            it enables the visualization of course requisites and prerequisites in a simple and intuitive manner with
+            directed graphs and course codes as nodes. It caters to the
+            unique needs of visual academic planning that current university planning tools don't fulfill.
             <br><br>
-            The web application is built using Python, Flask, and jQuery on the server-side, with 
-            NetworkX and Graphviz libraries for the generation and rendering of course graphs which utilize data scraped with Beautiful Soup. The client-side uses HTML, CSS, and Javascript to create an interactive and 
+            The web application is built using Python, Flask, and jQuery on the server-side, with
+            NetworkX and Graphviz libraries for the generation and rendering of course graphs which utilize data scraped
+            with Beautiful Soup. The client-side uses HTML, CSS, and Javascript to create an interactive and
             user-friendly interface. The website is deployed to and hosted with PythonAnywhere.
             <br>
             <br>
-            You can view the website <a class="text-link2" href="http://taodario.pythonanywhere.com/" target="_blank" rel="noreferrer">here.</a>
+            You can view the website <a class="text-link2" href="http://taodario.pythonanywhere.com/" target="_blank"
+                rel="noreferrer">here.</a>
             <br><br>
-            <img class="myImageClass" src="images/requisiterelationshipdemo.png" alt="Demo">
+            <img class="myImageClass" src="images/coursify-demo-image.png" alt="Demo">
             <br>
             <img class="myImageClass" src="images/course_prereqs1.png" alt="Demo">
-            <br>    
+            <br>
             <br>
         </p>
     </div>
@@ -69,7 +78,5 @@
     <script src="scripts.js"></script>
 
 </body>
-</html>    
 
-
-
+</html>

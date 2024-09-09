@@ -11,7 +11,7 @@
     <link rel="icon" href="dtlogo.png" type="image/png">
 
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="../portfolio-requisite-search/styles.css"> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -47,32 +47,30 @@
     </style>
 
     <div id="content">
-        <a href="https://github.com/CSC207-2023Y-UofT/course-project-thechessteam" class="text-link2" target="_blank"
-            rel="noreferrer">
-            <h1>Chess Engine Bitboards</h1>
+        <a class="text-link2" href="https://github.com/taodario/goodmintonbooker" target="_blank" rel="noreferrer">
+            <h1>Goodminton Booker - An Automated System to Book Badminton Courts</h1>
         </a>
-
         <p>
-            This project, initially started as an end-of-year project for CSC207 at UofT, is focused on creating a chess
-            engine using bitboards.
-            Given that there are 64 bits in a long datatype in Java, and perfectly 64 squares on a regular chessboard,
-            this was an efficient way to make calculations for valid piece move calculations and piece movement &
-            capture using bitwise operations.
-            This project is built with Java and Java Swing for the GUI, and employs Clean Architecture principles and
-            the Model-View-Controller framework.
+            Goodminton Booker is a tool for UofT Students to book badminton courts automatically - without being in
+            front of their screen when the reservation spot opens. It is highly difficult to be able to book a court
+            manually, as the courts open for booking hour by hour, and there is 1 spot for 3 total courts. A chance to
+            play badminton again!
+
+            This is developed using Python and Playwright. I implemented features such as login, scheduled booking
+            attempts, error handling, and screenshots for verfication.
+            <br><br>
+            In the images below, you can see the complex DOM
+            which needed to be navigated through based on user inputs for their desired dates, times, and courts.
+            <br><br>
+            <img class="myImageClass" src="images/image copy.png" alt="Demo">
+            <br>
+            <img class="myImageClass" src="images/image.png" alt="Demo">
             <br>
             <br>
-            <img class="myImageClass" src="images/chessgamedemo.png" alt="Chessboard">
-            <br>
-            <br>
-            <br>
-            Here is a look at how the packages were organized to follow the MVC framework with a focus on Clean
-            Architecture.
-            <br>
-            <img src="images/MVC-cleanarchitecture.png" alt="Chessboard">
         </p>
     </div>
 
+    <!-- linking to javascript file -->
     <script src="scripts.js"></script>
 
 </body>
